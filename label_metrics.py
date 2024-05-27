@@ -32,7 +32,7 @@ class LabelMetrics:
 
         micro_f1 = precision_recall_fscore_support(y_true_binary, y_pred_binary, average='micro', zero_division=0)
         macro_f1 = precision_recall_fscore_support(y_true_binary, y_pred_binary, average='macro', zero_division=0)
-        # Создание DataFrame для результатов
+
         return results, micro_f1, macro_f1
 
 
