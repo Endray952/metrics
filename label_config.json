@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "text": "suggestion",
+    "description": "User suggests app improvement or wants some content to be added",
+    "parentId": null
+  },
+  {
+    "id": 2,
+    "text": "general_error",
+    "description": "User found some problem or error in app",
+    "parentId": null
+  },
+  {
+    "id": 3,
+    "text": "general_functionality_or_design_issues",
+    "description": "User encountered problem or error with app functionality or design",
+    "parentId": 2
+  },
+  {
+    "id": 4,
+    "text": "network_issues",
+    "description": "User found network problem or error",
+    "parentId": 3
+  },
+  {
+    "id": 5,
+    "text": "content_download_error",
+    "description": "User encountered download error in app",
+    "parentId": 3
+  },
+  {
+    "id": 6,
+    "text": "app_work_issues",
+    "description": "App doesn't launch or work or crashes",
+    "parentId": 3
+  },
+  {
+    "id": 7,
+    "text": "crediting_problems",
+    "description": "problems with crediting to an accoun",
+    "parentId": 3
+  },
+  {
+    "id": 8,
+    "text": "advertisement_complaints",
+    "description": "User complaints about advertisement",
+    "parentId": 2
+  },
+  {
+    "id": 9,
+    "text": "price_policy_complaints",
+    "description": "User complaints about price policy",
+    "parentId": 2
+  },
+  {
+    "id": 10,
+    "text": "content_issues",
+    "description": "User complaints about app content",
+    "parentId": 2
+  },
+  {
+    "id": 11,
+    "text": "content_doesnt_work",
+    "description": "Content downloaded via app doesn't work",
+    "parentId": 2
+  },
+  {
+    "id": 12,
+    "text": "question",
+    "description": "user asks question that has to be answered by developers",
+    "parentId": null
+  }
+]
