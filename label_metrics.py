@@ -1,6 +1,19 @@
 import numpy as np
-from sklearn.metrics import precision_score, recall_score, f1_score, precision_recall_fscore_support
+from sklearn.metrics import precision_score, recall_score, f1_score, precision_recall_fscore_support, classification_report
 from sklearn.preprocessing import MultiLabelBinarizer
+
+labels_names = [ "suggestion",
+     "general_error",
+    "general_functionality_or_design_issues",
+    "network_issues",
+     "content_download_error",
+     "app_work_issues",
+    "crediting_problems",
+     "advertisement_complaints",
+     "price_policy_complaints",
+     "content_issues",
+     "content_doesnt_work",
+    "question"]
 
 class LabelMetrics:
     def __init__(self, labels):
@@ -33,7 +46,9 @@ class LabelMetrics:
         micro_f1 = precision_recall_fscore_support(y_true_binary, y_pred_binary, average='micro', zero_division=0)
         macro_f1 = precision_recall_fscore_support(y_true_binary, y_pred_binary, average='macro', zero_division=0)
 
-        return results, micro_f1, macro_f1
+        report = classification_report(y_true_binary, y_pred_binary, zero_division=0, output_dict=True, target_names=labels_names)
+
+        return results, micro_f1, macro_f1, report
 
 
 
